@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /htaccess_clean_url/
+
+#CLEAN URL......(^ carat)
+
+RewriteRule ^file/(\w+)/(\w+)$ file.php?name_name=$1&name_id=$2 [NC,L]
+
+RewriteRule ^contuct/(\d+)/(\w+)$ contuct.php?contuct_id=$1&con_name=$2 [NC,L]
+
+RewriteRule ^user/([0-9a-zA-Z_]+)$ user.php?u=$1 [NC,L]
+
+
