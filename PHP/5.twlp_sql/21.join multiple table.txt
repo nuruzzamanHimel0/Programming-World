@@ -1,0 +1,6 @@
+SELECT ordar.ordarNumber,customers.firstName,customers.address,products.name,products.price
+FROM ordar
+	INNER JOIN customers
+	ON ordar.customerId = customers.id
+		INNER JOIN products
+		ON ordar.productId = products.id

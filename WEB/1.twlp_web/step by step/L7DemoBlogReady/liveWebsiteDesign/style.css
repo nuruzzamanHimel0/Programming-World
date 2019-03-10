@@ -1,0 +1,116 @@
+/* CSS Document */
+
+*{margin:0; padding:0; outline:0;}
+body{font-family:arial; font-size:16px; line-height:18px; color:}
+
+.template{width:960px; margin:0px auto;}
+.clear{overflow:hidden;}
+.headerSection {
+    height: 85px;
+    background: #262626;
+    color: #fff;
+}
+.headerSection h2 {
+    font-size: 40px;
+    text-align: center;
+    padding-top: 30px;
+}
+.nevigationSection {
+    
+    background: #868686;
+    color: #fff;
+}
+.nevigationSection ul{margin:0px; padding::0px;list-style:none;}
+.nevigationSection ul li{display:block;float:left;}
+.nevigationSection ul li a {
+    background: #D3D3D3;
+    display: block;
+    padding: 7px 20px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #535354;
+	
+}
+.nevigationSection ul li a:hover { background:#262626;color:#fff;}
+.contentSection {background:#fffffff;}
+.mainContent {
+    width: 600px;
+    background: #D3D3D3;
+    float: left;
+    padding: 10px;
+    margin: 15px;
+    margin-left: 0px;
+	overflow:scroll;
+	height:622px;
+}
+.samePost{}
+.samePost h2 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid #86867F;
+    padding: 10px;
+    font-size: 25px;
+}
+.samePost img {
+    width: 209px;
+    height: 150px;
+    float: left;
+    margin-right: 15px;
+    background: #ffff;
+    padding: 5px;
+    border: 1px solid #86868B;
+}
+.samePost p {
+    font-size: 16px;
+    line-height: 23px;
+    text-align: justify;
+}
+.readMore {
+    float: right;
+   
+}
+.readMore a {
+    text-decoration: none;
+    background: #ffff;
+    display: block;
+    padding: 5px 10px;
+    font-size: 17px;
+    color: #868675;
+    border-radius: 10px 0px 10px 0px;
+    border: 1px solid #868686;
+}
+
+.readMore a:hover {
+	background: #252525;
+	color:#FFF;	
+}
+.slidebar {
+    width: 302px;
+    background: #D3D3D3;
+    float: right;
+    padding: 10px;
+    margin: 16px 0px;
+}
+.sameSidebar {}
+.sameSidebar h2 {
+    background: #7F7F7F;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #3F3F34;
+    color: #ffff;
+}
+.sameSidebar p {
+    margin-bottom: 10px;
+}
+.footerSection {
+    height: 90px;
+    background: #464646;
+    color: #fff;
+}
+.footerSection h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 27px;
+	font-weight:bold;
+}

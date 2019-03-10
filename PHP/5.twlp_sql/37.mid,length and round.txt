@@ -1,0 +1,11 @@
+MID:
+SELECT MID(city,1,3) AS shortCity 
+FROM customer
+
+LENGTH:
+SELECT firstName, LENGTH(email) AS emailLenght , address
+FROM customers;
+
+ROUND:
+
+SELECT ROUND(salary,0) FROM customers;

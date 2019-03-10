@@ -1,0 +1,2 @@
+SELECT o.id,o.ordarDate,c.firstName,c.lastName
+FROM customers as c,ordar as o;

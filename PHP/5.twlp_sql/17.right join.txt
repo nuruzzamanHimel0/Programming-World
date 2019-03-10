@@ -1,0 +1,19 @@
+SELECT ordar.ordarNumber,ordar.ordarDate,customers.firstName,customers.lastName 
+FROM ordar
+RIGHT JOIN customers
+ON ordar.customerId = customers.id
+ORDER BY customers.id
+
+ ordarNumber 	ordarDate 	firstName 	lastName 	
+2 	2018-05-22 11:10:34 	Nuruzzaman  Himel
+5 	2018-05-22 11:10:34 	Nuruzzaman  Himel
+4 	2018-05-22 11:10:34 	Khan 	Helal
+7 	2018-05-22 11:10:34 	Robaitul 	Islam
+1 	2018-05-22 11:10:34 	Rezaul 	Islam
+8 	2018-05-22 11:10:34 	Rezaul 	Islam
+9 	2018-05-22 11:10:34 	kaniz 	fatima
+3 	2018-05-22 11:10:34 	Tania 	islam
+NULL	NULL		Robin 	Islam
+NULL	NULL		anamul 	kazi
+6 	2018-05-22 11:10:34 	neyamul 	kazi
+NULL	NULL		lotifur 	islam

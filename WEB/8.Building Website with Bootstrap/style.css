@@ -1,0 +1,227 @@
+
+.headsection {
+	background: #1C1C1C;
+	/*bootstrap 4 (fixed-top class)*/
+	/*position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	z-index: 999;*/
+}
+.headsection .header{}
+.headsection .header .headerNav {
+	min-height: 70px;
+	background: #1C1C1C !important;
+}
+.navbar-collapse .navbar-nav li a{
+	color: #fff !important;
+	font-size: 20px !important;
+	margin-left: 11px;
+	margin-right: 3px;
+	}
+.navbar-collapse .navbar-nav li a:hover{
+	color: #3A9008 !important;
+}
+.navbar-collapse .navbar-nav li a:focus{
+	color: #3A9008 !important;
+}
+.navbar-brand{
+	margin-left: 30px !important;
+}
+.logo{float:left;}
+.logo img{}
+.title{float:left;}
+.title h2{ margin-left: 19px; }
+.title h2 span{font-weight: bold;}
+
+.bannersection {
+	background-image: url("images/banner.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 130px;
+	background-size: 100% 100%;
+}
+.bannerContnr{}
+.banner {
+	max-width: 608px;
+}
+.banner h1 {
+	color: #ffff;
+	font-size: 52px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.banner p {
+	color: #fff;
+	font-size: 29px;
+}
+.banner button {
+	margin-top: 51px;
+	padding: 10px 46px;
+	font-size: 27px;
+	font-weight: bold;
+}
+
+
+.serviceSection {
+	margin: 75px 0px;
+}
+.containerSrvc{}
+.service {
+	margin-right: 46px;
+}
+.service h2 {
+	color: #9B9A9A;
+	margin: 35px 0;
+	font-size: 36px;
+	/* font-weight: bold; */
+}
+.service p {
+	color: #9B9A9A;
+	font-size: 19px;
+	line-height: 23px;
+}
+.serviceImg {
+	background: #E8E8E8;
+	border: 3px solid #ffff;
+	box-shadow: 0px 0px 28px 0px #9999;
+	padding: 44px 0;
+}
+.serviceImg i {
+	font-size: 63px;
+	color: #ffffff;
+}
+
+/*testimonial.............*/
+.testimonial {
+	padding: 25px 0;
+}
+.clintHeading {
+	margin-bottom: 63px;
+}
+.clintHeading h2 {
+	background: #52B105;
+	text-align: center;
+	max-width: 342px;
+	margin: 0px auto;
+	color: #ffff;
+	font-size: 31px;
+	padding: 12px 4px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.clintImg{}
+.clintImg img {
+	width: 93%;
+	border: 5px solid #ffffff;
+	background: #fffff;
+	/* padding: 8px; */
+	box-shadow: 6px 5px 10px 2px #999999;
+	border-radius: 8px;
+}
+.clientSpect{margin-top: 40px;}
+.clientSpect i {
+	font-size: 50px;
+	color: #E6E6E6;
+	margin-bottom: 15px;
+}
+.clientSpect p {
+	font-size: 21px;
+	text-align: center;
+	color: #B2B1B1;
+}
+
+.clintfooting {
+	margin-top: 80px;
+}
+/*addressSection.............*/
+
+.addressSection {
+	padding: 75px;
+}
+.addHeading {
+	margin-bottom: 65px;
+}
+.addHeading h2 {
+	background: #52B105;
+	text-align: center;
+	width: 232px;
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 6px 0;
+	margin: 0px auto;
+}
+.house{}
+.house i {
+	background: #e6e6e6;
+	padding: 20px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	margin-right: 23px;
+	color: #fff;
+}
+.house span {
+	color: #aaaaab;
+	font-size: 17px;
+}
+.roadName span {
+	/* float: left; */
+	position: absolute;
+	top: -57px;
+	center: 0;
+	margin-left: 77px;
+}
+
+.roadName {
+	position: relative;
+	width: 211px;
+}
+.social {
+	margin-top: 89px;
+}
+.social i {
+	background: #e6e6e6;
+	padding: 21px;
+	font-size: 20px;
+	border-radius: 50%;
+	margin-right: 6px;
+}
+.myMap{}
+.myMap img{}
+
+#map{
+		width:300px;
+		height:250px;	
+	}
+
+.footerscetion {
+	background: #333;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 0px !important;
+}
+.footerscetion p {
+	padding: 17px 0px;
+	font-size: 26px;
+	font-weight: bold;
+	margin-bottom: 0px;
+}
+#scrollToUp {
+	background: #51B105;
+	height: 58px;
+	width: 60px;
+	text-align: center;
+	position: fixed;
+	bottom: 8px;
+	border-radius: 50%;
+	right: 17px;
+	cursor: pointer;
+}
+#scrollToUp i {
+	font-size: 45px;
+	color: #fff;
+	padding: 6px 0;
+	/* position: fixed; */
+}

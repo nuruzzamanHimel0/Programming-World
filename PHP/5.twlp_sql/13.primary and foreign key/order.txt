@@ -1,0 +1,9 @@
+CREATE TABLE order(
+	id INT NOT NULL AUTO_INCREMENT,
+	orderNumber INT,
+	customerId INT,
+	productId INT,
+	PRIMARY KEY(id),
+	FOREIGN KEY(customerId ) REFERENCES customer(id),
+	FOREIGN KEY(productId) REFERENCES product(id)
+)

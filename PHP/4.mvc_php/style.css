@@ -1,0 +1,67 @@
+.phpcoding{ width: 900px; margin:0 auto; background:#EAEBF8; padding:15px; }
+.headersection , .footersection{ background:#0773E3; color:#fff; text-align:center; padding-top:15px; padding-bottom:15px; }
+.mainsection { min-height:450px; padding:20px;}
+
+.titleSection{}
+.titleSection h2 {
+	float: left;
+	margin-left: 68px;
+}
+.titleSection h2 a {
+	float: right;
+	/*margin-left: 306px;*/
+}
+
+.clear{overflow: hidden;}
+.mainLeft {
+	float: left;
+	width: 437px;
+	border-right: 2px dotted #B7B7B7;
+	padding-right: 5px;
+}
+.mainLeft tr td{}
+.mainLeft tr td p {
+	font-size: 19px;
+	margin: 0px;
+	padding: 0px;
+	
+}
+
+input[type="text"] {
+	width: 301px;
+	padding: 10px;
+	font-size: 19px;
+	border-bottom: 1px solid #A8A9B6;
+	margin-bottom: 5px;
+}
+input[type="submit"] {
+	padding: 8px 18px;
+	font-size: 19px;
+	border: 1px solid #ABABAB;
+	border-radius: 5px;
+	margin-top: 13px;
+}
+
+.mainRight {
+	float: right;
+	width: 100%;
+}
+.tbllone {
+	width: 100%;
+	border: 1px solid #fff;
+	font-size: 19px;
+}
+.tbllone tr td {
+	padding: 4px 4px;
+	text-align: center;
+	border: 1px solid #fff;
+}
+
+table.tbllone tr:nth-child(2n+1) {
+	height: 45px !important;
+	background: #fff;
+}
+table.tbllone tr:nth-child(2n) {
+	height: 45px;
+	background: #F7ECE9;
+}

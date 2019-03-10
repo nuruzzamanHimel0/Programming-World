@@ -1,0 +1,24 @@
+Query :---
+CREATE VIEW customers_view_new AS
+    SELECT id, firstName,lastName,address
+        FROM customers
+           WHERE firstName IS NOT NULL
+               WITH CHECK OPTION
+
+With Check Option do check the condition of the QUERY.
+
+UPDATE VIEW:
+
+Query:
+UPDATE customer_new
+   SET address = 'satkhira'
+      WHERE id = 10
+
+DELETE VIEW:
+
+DELETE FROM customer_new
+WHERE id = 10
+
+DROP VIEW:
+
+DROP VIEW customer_new;

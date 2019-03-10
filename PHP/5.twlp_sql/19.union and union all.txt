@@ -1,0 +1,18 @@
+1) 
+SELECT city FROM customers
+UNION
+SELECT city FROM suppliers
+
+it will be work as a union operator.
+
+2)
+
+SELECT city FROM customers
+UNION ALL
+SELECT city FROM suppliers
+
+SELECT city,division FROM customers
+WHERE city = 'khulna'
+UNION ALL
+SELECT city,division FROM suppliers
+WHERE city = 'khulna'

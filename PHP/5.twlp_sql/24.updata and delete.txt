@@ -1,0 +1,27 @@
+UPDATE :- 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+UPDATE customers
+SET salary = salary * 0.25
+WHERE age IN(SELECT age 
+	FROM customer_backup
+	WHERE age 
+	BETWEEN 30 AND 35
+);
+or
+
+UPDATE customers
+SET salary = salary*.5
+WHERE age IN(
+	SELECT age FROM customers_backup
+	WHERE age > 20
+)
+
+DELETE :- 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+DELETE FROM customer_backup
+WHERE age IN( SELECT age
+	FROM customers
+	WHERE age = 20
+
+)

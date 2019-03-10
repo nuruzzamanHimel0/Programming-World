@@ -1,0 +1,5 @@
+SELECT id,firstName,age 
+	FROM customers
+    	WHERE age
+        	BETWEEN 20 AND 40
+            	ORDER BY id ASC

@@ -1,0 +1,144 @@
+/* CSS Document */
+
+*{margin:0; padding:0; outline:0;}
+body{font-family:arial; font-size:16px; line-height:18px; color:}
+
+.template{width:960px; margin:0px auto;}
+.clear{overflow:hidden;}
+.headerSection {
+	background: #B27E19;
+	color: #fff;
+}
+
+.logo {
+	width: 600px;
+	float: left;
+}
+.logo img {
+	float: left;
+	width: 151px;
+	padding-top: 0px;
+	margin-right: 16px;
+}
+.logo h2 {
+	margin-top: 41px;
+	margin-bottom: 26px;
+	font-size: 43px;
+	color: #ffff;
+	text-shadow: 7px -1px 0px #666;
+}
+.logo p{}
+
+.social {
+	width: 336px;
+	float: right;
+}
+.social img {
+	width: 73px;
+	height: 73px;
+	padding-top: 38px;
+	padding-right: 6px;
+}
+
+.nevigationSection {
+	background: #CF9B36;
+	color: #fff;
+}
+.nevigationSection ul{margin:0px; padding::0px;list-style:none;}
+.nevigationSection ul li{display:block;float:left;}
+.nevigationSection ul li a {
+	display: block;
+	padding: 7px 20px;
+	margin: 5px;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	color: #ffff;
+	border: 1px solid #7F7F7F;
+	background: #A2730E;
+	border-radius: 6px;
+}
+.nevigationSection ul li a:hover { background:#FFFF;color:#000;}
+.contentSection {background:#fffffff;}
+.mainContent {
+	width: 581px;
+	background: #F4EDDD;
+	float: left;
+	padding: 8px 20px;
+	margin: 15px;
+	margin-left: 0px;
+	border: 1px solid #7F7F7F;
+}
+
+.samePost{}
+.samePost h2 {
+	margin-bottom: 10px;
+	border-bottom: 2px solid #FEFEFE;
+	padding: 10px;
+	font-size: 25px;
+	color: #CF9B36;
+	font-size: 29px;
+}
+.samePost img {
+    width: 209px;
+    height: 150px;
+    float: left;
+    margin-right: 15px;
+    background: #ffff;
+    padding: 5px;
+    border: 1px solid #86868B;
+}
+.samePost p {
+    font-size: 16px;
+    line-height: 23px;
+    text-align: justify;
+}
+.readMore {
+    float: right;
+   
+}
+.readMore a {
+    text-decoration: none;
+    background: #ffff;
+    display: block;
+    padding: 5px 10px;
+    font-size: 17px;
+    color: #868675;
+    border-radius: 10px 0px 10px 0px;
+    border: 1px solid #868686;
+}
+
+.readMore a:hover {
+	background: #252525;
+	color:#FFF;	
+}
+.slidebar {
+	width: 300px;
+	background: #F4EDDD;
+	float: right;
+	padding: 10px;
+	margin: 16px 0px;
+	border: 1px solid #585858;
+}
+.sameSidebar {}
+.sameSidebar h2 {
+	background: #CF9B36;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #3F3F34;
+	color: #252522;
+}
+.sameSidebar p {
+    margin-bottom: 10px;
+}
+.footerSection {
+    height: 90px;
+    background: #21321C;
+    color: #fff;
+}
+.footerSection h2 {
+    font-size: 30px;
+    text-align: center;
+    padding-top: 27px;
+	font-weight:bold;
+}

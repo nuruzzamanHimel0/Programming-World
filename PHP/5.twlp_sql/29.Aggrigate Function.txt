@@ -1,0 +1,7 @@
+Aggrigate Function:-
+
+1. SELECT AVG(salary) FROM customers
+2. SELECT COUNT(salary) FROM customers
+2. SELECT SUM(salary) FROM customers
+2. SELECT MIN(salary) FROM customers
+2. SELECT MAX(salary) FROM customers

@@ -1,0 +1,5 @@
+Query : TRUNCATE TABLE table_name;
+..............IT uses for delete All DATA from any table.
+We can use another query for same work like as,
+
+DELETE TABLE table_name;

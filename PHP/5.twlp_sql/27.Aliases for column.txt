@@ -1,0 +1,16 @@
+query 1#  SELECT firstName as 'FIRST NAME', lastName as 'LAST NAME' FROM customers
+
+query 2# SELECT CONCAT(firstName,' ',lastName) AS 'NAME', CONCAT(email,' ',city) AS 'ADDRESS' FROM customers;
+
+
+NAME 		ADDRESS 	
+Nuruzzaman Himel 	himel@gmail.com satkhir
+Khan Helal 	Helal@gmail.com India
+Robaitul Islam 	Robaitul@gmail.com borisal
+Rezaul Islam 	Rezaul@gmail.com borisal
+kaniz fatima 	kniz@gmail.com khulna
+Tania islam 	kniz@gmail.com khulna
+Robin Islam 	kniz@gmail.com Cumilla
+anamul kazi 	anamul@gmail.com chilet
+neyamul kazi 	neyamul@gmail.com chilet
+lotifur islam 	lotifur@gmail.com satkhira

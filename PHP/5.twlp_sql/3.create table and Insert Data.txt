@@ -1,0 +1,13 @@
+1) create table:
+CREATE TABLE person_info(
+id INT NOT NULL AUTO_INCRIMENT,
+first_name VARCHAR(255),
+last_name VARCHAR(255),
+age VARCHER(255),
+PRIMARY KEY(id)
+);
+
+2) data insert:--- 
+INSERT INTO person_info(first_name,last_name,age) VALUES('aa','bb','20');
+multiple data insert:---
+INSERT INTO person_info(first_name,last_name,age) VALUES('aa','bb','20'),('aa','bb','20'),('aa','bb','20'),('aa','bb','20'),('aa','bb','20');

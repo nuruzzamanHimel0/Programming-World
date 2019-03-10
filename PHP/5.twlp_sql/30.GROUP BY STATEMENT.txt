@@ -1,0 +1,15 @@
+1.
+SELECT age, COUNT(age) 
+FROM customers
+WHERE age > 30
+GROUP BY age
+
+HERE, Must Be Use GROUP BY keywords to group the column of the table.
+
+2.
+SELECT age, COUNT(age),MAX(age)
+FROM customers
+WHERE age >20
+GROUP BY age
+
+If i use "Aggrigate Function" on your query then we must use "GROUP BY" keyword for group your column

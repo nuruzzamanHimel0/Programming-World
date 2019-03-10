@@ -1,0 +1,10 @@
+// subquery Insert.......................
+
+1.  INSERT INTO customer_backup
+	SELECT * FROM customer
+
+2. INSERT INTO customers_bakup
+	SELECT * FROM customers
+    	WHERE id IN(
+        	SELECT id FROM customers
+        );

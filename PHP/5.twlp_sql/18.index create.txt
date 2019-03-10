@@ -1,0 +1,7 @@
+1. Index create.................................
+CREATE INDEX CIndex
+ON customers(city);
+
+2. Index drow.........................
+DROP  INDEX CIndex
+ON customers;

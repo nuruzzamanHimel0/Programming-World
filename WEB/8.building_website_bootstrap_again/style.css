@@ -1,0 +1,213 @@
+
+
+.headersection {
+	background: #1C1C1C;
+	/*bootstrap 4 (fixed-top class)*/
+	/*position: fixed;
+	right: 0;
+	left: 0;
+	top: 0;
+	z-index: 999;*/
+}
+.headersection .header{}
+.headersection .header .headerNav{min-height: 70px;
+	background: #1C1C1C !important;}
+.navbar-collapse .navbar-nav li a {
+	color: #fff !important;
+	font-size: 20px;
+	margin-right: 14px;
+}
+.navbar-collapse .navbar-nav li a:hover{ color: #40A208 !important; }
+.navbar-collapse .navbar-nav li a:focus{ color: #40A208 !important; }
+
+.logo{float: left;}
+.logo img{}
+.title{float: left;}
+.title h2 {
+	/* margin: 0; */
+	padding: 0;
+	color: #fff;
+	margin-left: 25px;
+	font-size: 36px;
+}
+.title h2 span {
+	font-weight: bold;
+}
+
+.bannerSection {
+	background-image: url("images/banner.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: scroll;
+	padding: 100px 0;
+}
+.bannerCon{}
+.banner {
+	width: 630px;
+}
+.banner h1 {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 55px;
+}
+.banner p {
+	font-size: 28px;
+	color: #fff;
+}
+.banner button {
+	padding: 16px 47px;
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: #4BAC07 !important;
+	margin-top: 50px;
+}
+
+.serviceSection {
+	padding: 75px 0;
+}
+.serviceContain{}
+.service {
+	margin-left: 54px;
+}
+.service h2 {
+	color: #8C8B8B;
+	padding: 41px 0;
+}
+.service p {
+	color: #8C8B8B;
+	font-size: 18px;
+}
+.serviceImg {
+	background: #E8E8E8;
+	padding: 73px 0;
+	border: 3px solid #fff;
+	box-shadow: 0px 4px 3px 0px #999;
+}
+.serviceImg i {
+	font-size: 80px;
+	color: #fff;
+}
+.testimonialSection {
+	padding: 62px 0;
+}
+.testimonialCon{}
+.clintHeading {
+	margin-bottom: 65px;
+}
+.clintHeading p {
+	background: #51B105;
+	text-transform: uppercase;
+	font-size: 30px;
+	color: #fff;
+	font-weight: bold;
+	width: 383px;
+	margin: 0 auto;
+	padding: 10px 28px;
+}
+.clintImg{}
+.clintImg img {
+	width: 288px;
+	box-shadow: 0px -1px 5px 9px #999999;
+	border: 7px solid #fff;
+}
+.clintSpeech{}
+.clintSpeech p {
+	color: #949393;
+	font-size: 20px;
+	text-align: center;
+	margin-left: 23px;
+	padding: 20px 0;
+}
+.quoteImg{}
+.quoteImg i {
+	color: #E6E6E6;
+	font-size: 49px;
+}
+
+.addressSection {
+	padding: 70px 0;
+}
+.addressCon{}
+.addheading {
+	padding: 68px 0;
+}
+.addheading h2 {
+	background: #51B105;
+	color: #fff;
+	width: 285px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 9px 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.house{}
+.house p i {
+	background: #E6E6E6;
+	padding: 17px;
+	border-radius: 50%;
+	font-size: 29px;
+	color: #fff;
+	margin-right: 24px;
+}
+.house p span {
+	color: #B3B3B3;
+	font-size: 19px;
+}
+.
+.social{padding: 93px 0 !important;}
+.social i{
+	background: #E6E6E6;
+	padding: 17px;
+	border-radius: 50%;
+	font-size: 29px;
+	color: #fff;
+	margin-right: 24px;
+}
+
+.mymap{}
+#map {
+	width: 384px;
+	height: 331px;
+}
+
+.roadimg i {
+	background: #E6E6E6;
+	padding: 17px;
+	border-radius: 50%;
+	font-size: 29px;
+	color: #fff;
+	margin-right: 24px;
+	float: left;
+}
+.roadname{}	
+.roadname span{}	
+
+.footersection {
+	background: #1C1C1C;
+	color: #fff;
+	text-align: center;
+	padding: 2px 0;
+}
+.footersection p {
+	font-size: 28px;
+	font-weight: bold;
+}
+#scrollToUp {
+	background: #3E7C0D;
+	width: 55px;
+	height: 57px;
+	border-radius: 50%;
+	position: fixed;
+	right: 10px;
+	bottom: 3px;
+}
+#scrollToUp i {
+	color: #fff;
+	font-size: 54px;
+	padding: 2px 0;
+	cursor: pointer;
+}

@@ -1,0 +1,12 @@
+1) Create View: (Create a Visual From of the View Table)
+CREATE VIEW customers_view AS
+SELECT id,firstName,lastName,address
+FROM customers
+WHERE firstName IS NOT NULL;
+
+2)Show View: (It will be show view new table)
+SELECT * FROM customers_view
+
+3)Insert Data View Table:
+
+INSERT INTO customers_view(id,firstName,lastName,address) VALUES(12,'Lotif','vai','satkhira')

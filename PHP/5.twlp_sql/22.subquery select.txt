@@ -1,0 +1,6 @@
+SELECT *
+FROM customers
+WHERE id IN( SELECT id
+           FROM customers
+            WHERE age > 20
+           )

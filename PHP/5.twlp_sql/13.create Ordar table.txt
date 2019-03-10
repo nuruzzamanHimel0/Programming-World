@@ -1,0 +1,9 @@
+CREATE TABLE ordar(
+id INT PRIMARY KEY AUTO_INCREMENT,
+ordarName VARCHAR(255),
+productId INT
+customerId INT,
+ordarDate DATETIME default CURRENT_TIMESTAMP,
+FOREIGN KEY(productId ) REFERENCES product(id),
+FOREIGN KEY(customerId ) REFERENCES customer(id)
+);
