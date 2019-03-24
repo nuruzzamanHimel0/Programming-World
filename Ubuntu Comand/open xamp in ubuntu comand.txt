@@ -1,0 +1,6 @@
+webdev@webDev:~$ cd /opt/lampp/
+webdev@webDev:/opt/lampp$ ls
+webdev@webDev:/opt/lampp$ sudo chmod 755 manager-linux-x64.run
+[sudo] password for webdev: 
+webdev@webDev:/opt/lampp$ sudo ./manager-linux-x64.run
+
