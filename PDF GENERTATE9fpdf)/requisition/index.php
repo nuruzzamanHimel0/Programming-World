@@ -122,6 +122,12 @@
 
 		public function requisition_table($header,$rtype ,$product, $quentity)
 		{
+			$pro = array();
+			$pro[] = $product;
+
+			// echo "<pre>";
+			// print_r($pro);
+			// exit();
 			 $w = array(80,150,150,80);
 			 $sl = 0;
 			 //Emty Cell
@@ -142,7 +148,7 @@
 			 $this->SetTextColor(0);
 			 $this->SetLineWidth(1);
 
-			for ($i=0; $i < count($product) ; $i++) { 
+			for ($i=0; $i < count($pro) ; $i++) { 
 				$sl++;
 				//Emty Cell
 			 $this->Cell(35);
@@ -276,10 +282,17 @@
 
 	if(isset($_POST) AND isset($_POST['submit']) AND !empty($_POST))
 	{
-		$note = $_POST['note'];
+		
+		$product = array();
+		$quantity = array();
+
+		if(isset($_POST['note']) AND isset($_POST['rtype']) AND isset($_POST['product']) AND isset($_POST['quantity']))
+		{
+			$note = $_POST['note'];
 		$rtype = $_POST['rtype'];
 		$product = $_POST['product'];
 		$quantity = $_POST['quantity'];
+		}
 
 		if($rtype  == 'Requisition Type' AND $product[0] == 'Requisition' AND empty($product[1])  AND empty($quantity[0]) AND empty($quantity[1]))
 		{

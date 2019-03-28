@@ -9,7 +9,7 @@
 	$pdf->SetFont("Arial","I",15);
 
 	$pdf->SetFillColor(204,255,255); // bg color(true)
-	$pdf->SetTextColor(0,0,0);// font color
+	$pdf->SetTextColor(0,0,0);/requisition// font color
 	$pdf->SetLineWidth(2); // border:2px
 
 	//set margin..........
