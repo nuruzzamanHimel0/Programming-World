@@ -42,8 +42,9 @@
 			$this->Cell(100,20," Date Of Requisition: ",0,0);
 
 			$this->SetFont("Arial",'B',12);
+			// Free Spach Cell.....
 			$this->Cell(15);
-			$this->Cell(0,20,date(' j F,Y'),0,1);
+			$this->Cell(0,20,date('j F,Y'),0,1);
 			
 			$this->Ln(15);
 		
@@ -66,8 +67,9 @@
             $this->Cell(90,15,'MyLightHost','BR',0,'L',true);
             $this->Cell(400,15,'Corporate Office','B',1,'L',true);
 
+            // ONLY BORDER...................
             $this->SetXY(100,-58);
-            $this->SetLineWidth(1); // border
+            $this->SetLineWidth(.5); // border
             $this->Cell(490,10,'','B',1);
             $this->Ln(15);
 
@@ -75,17 +77,18 @@
             $this->SetFillColor(255);
              $this->SetXY(100,-46);
             $this->Cell(200,13,'Sheikh Hasina Software Technology Park.',0,0,'L',true);
+            $this->SetFont("Arial",'',9);
             $this->Cell(150,13,'0421-68302',0,0,'L',true);
             $this->Cell(140,13,'admin@mylighthost.com',0,0,'L',true);
 
             $this->Ln();
 
-             $this->SetFont("Arial",'B',9);
+             $this->SetFont("Arial",'',9);
             $this->SetFillColor(255);
              $this->SetX(100);
-            $this->Cell(200,13,'Sheikh Hasina Software Technology Park.','B',0,'L',true);
-            $this->Cell(150,13,'01735457483 or 01622819929','B',0,'L',true);
-            $this->Cell(140,13,'admin@mylighthost.com','B',0,'L',true);
+            $this->Cell(200,13,'(MTB,13th Floor),Nazir Sankarpur Road, Jashore','B',0,'L',true);
+            $this->Cell(150,13,'01910911911 or 01551911911','B',0,'L',true);
+            $this->Cell(140,13,'www.mylighthost.com','B',0,'L',true);
 		}
 
 		public function requisition_sub()
@@ -108,12 +111,15 @@
 		$this->SetX(60);
 		$this->Cell(0,20,'Dear Sir,',0,1,'L');
 		$this->SetX(60);
+
 		$pag_w = $this->GetPageWidth();
+
 		$this->MultiCell($pag_w,20,'For following purpose you are requested to allow for purchasing the materials');
 
 		$this->Ln(7); // Break line
 
 		$this->SetFont("Arial",'U','15');
+		// Empty Cell...
 		$this->SetX(60);
 		$this->Cell(0,20,'Purpose:',0,1,'L');
 		$this->Ln(15);
@@ -125,9 +131,6 @@
 			$pro = array();
 			$pro[] = $product;
 
-			// echo "<pre>";
-			// print_r($pro);
-			// exit();
 			 $w = array(80,150,150,80);
 			 $sl = 0;
 			 //Emty Cell
@@ -170,7 +173,7 @@
 			$this->SetFillColor(224,224,224);
 			$this->SetTextColor(0);
 			$this->SetLineWidth(1);
-			// Left side space
+			// Left side space EMPTY CELL
 			$this->Cell(35);
 
 			$this->Cell(array_sum($w),25,'Note : ',1,0,'L',true);
@@ -236,6 +239,7 @@
 			$this->Image('Signature/signature.png',null,null,100,0,'PNG');
 			$this->Ln(8);
 			
+			// Border after signature...
 			$this->SetX(($pageWidth/3)+50);
 			$this->SetLineWidth(1);
 			$this->Cell(($pageWidth/3)-60,0,'',1,1);
@@ -307,11 +311,14 @@
 				$header = array('S.N','Requisition Type','Name of Materials','Quantity');
 
 				$pdf->AddPage();
+
 				$pdf->requisition_sub();
 				 $pdf->requisition_table($header,$rtype,$product[0],$quantity[0]);
 				 $pdf->requisition_note($note);
 				 // $pdf->Output('requisition.pdf',"I");
 				 $pdf->Signature();
+
+				 $pdf->Output('requisition.pdf',"I");
 		}
 		else if($rtype  != 'Requisition Type' AND $product[0] == 'Requisition' AND !empty($product[1]) AND !empty($quantity[1]))
 		{
@@ -326,26 +333,17 @@
 				 $pdf->requisition_table($header,$rtype,$product[1],$quantity[1]);
 				 $pdf->requisition_note($note);
 				  $pdf->Signature();
+
+				  $pdf->Output('requisition.pdf',"I");
 				
 		}
 
 
 
 
-		 $pdf->Output('requisition.pdf',"I");
+		 
 	
 		
-
-
-		
-
-// 		if(isset($_POST['product']) AND isset($_POST['quantity']))
-// {
-// 	echo "<pre>";
-// 	print_r($rtype);
-// 	print_r($product);
-// 		print_r($quantity);
-// }
 
 		
 	}
