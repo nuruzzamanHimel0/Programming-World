@@ -16,7 +16,7 @@
 		//CURRENT CODE JUST HIDDEN FOR DEBUG.....
 		public function Header()
 		{
-			$this->Image('images/logo.png',60,30,150,0,'PNG','https://www.mylighthost.com');
+			$this->Image('images/logo.png',60,20,150,0,'PNG','https://www.mylighthost.com');
 
 			$this->Ln(50);
 			//Blank Cell
@@ -511,24 +511,14 @@
 			$leave_period = $_POST['Lperipd'];
 			$note = $_POST['note'];
 
-			// echo $name."<br>";
-			// echo $position."<br>";
-			// echo $leave_type."<br>";
-			// echo "<pre>";
-			// print_r($leave_period);
-
-			// echo "To:".date("d-m-Y",strtotime($leave_period[0]))."<br>";
-			// echo "From:".date("d-m-Y",strtotime($leave_period[1]))."<br>";
-
-			// echo $note;
-			// exit();
+		
 		}
 
-		// if(empty($name) OR empty($pin) OR $position == 'Position Type' OR $leave_type == 'Leave Type' OR empty($leave_period) OR empty($note))
-		// {
-		// 	echo "Any Field can't empty";
-		// }
-		if(isset($_POST))
+		if(empty($name) OR empty($pin) OR $position == 'Position Type' OR $leave_type == 'Leave Type' OR empty($leave_period) OR empty($note))
+		{
+			echo "Any Field can't empty";
+		}
+		else
 		{
 
 			$pdf = new leave_application_PDF();
