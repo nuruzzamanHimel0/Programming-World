@@ -2,90 +2,79 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Class 4(JS GRAPH)</title>
 </head>
 <body>
 	
+	<p>Type change:-----------------</p>
+	<input type="text" name="" id="demo1"> <br>
+	<input type="submit" name="" onclick="myFunction()" > <br> <br>
+	<input type="text" name="" id="demo2"> <br>
+
 	<script type="text/javascript">
 		
-	var days = ['sun','mon','tus','wed','thus','fri'];
+		
 
-	// var days[0] = 'sat';
-	// var days[1] = 'mon';
-	// var days[2] = 'tus';
-	
-	var lengthh = days.length;
-	document.write("Length:"+lengthh+"<br>");
-
-	document.write("days: \n");
-	for (var i = 0; i < days.length; i++) {
-		document.write(days[i]+" ")
-	}
-	document.write("<br>");
-
-	</script>
-
-
-	<script type="text/javascript">
-		var days = new Array('sun','mon','tus','wed','thus','fri');
-		document.write("days: \n");
-		for (var i = 0; i < days.length; i++) {
-			document.write(days[i]+" ")
-		}
-		document.write("<br>");
-	</script>
-
-	<p id="demo"></p>
-	<p id="demo1"></p> 
-	<p id="demo2"></p>
-	<p id="demo3"></p>
-	<p id="demo4"></p>
-	<p id="demo5"></p>
-
-	<p id='assArray'></p>
-
-	<script type="text/javascript">
-		var cars = new Array("Saab", "Volvo", "BMW");
-		// edited..
-		cars[0] ='Opel';
-
-		document.getElementById("demo").innerHTML  = cars;
-
-		// document.write("<br>");
-		document.getElementById('demo1').innerHTML = cars[0];
-
-		// document.write("<br>");
-		document.getElementById('demo2').innerHTML = cars;
-
-		// Associative Array
-		var person = {'fname':'Nuruzzaman','lname':'himel','age':26};
-
-		document.getElementById('demo4').innerHTML = person['fname'];
-
-		//The best way to loop through an array is using a standard for loop:
-
-		var fruits, text, flen;
-
-		fruits = ["Banana", "Orange", "Apple", "Mango"];
-
-		flen = fruits.length;
-
-		text = "<ul>";
-		for(var i =0;i<flen;i++)
+		function myFunction()
 		{
-			text += "<li>"+fruits[i]+"</li>";
+			var i = document.querySelector('#demo1');
+			var o = document.querySelector("#demo2");
+
+			 i = i.value;
+
+			 o.type = i;
 		}
-		text += "</ul>";
-
-		document.write(text);
-
-		document.getElementById("demo5").innerHTML = text+"<br>";
-
-		https://www.w3schools.com/js/js_arrays.asp
-		
 
 	</script>
+	<br><br><hr><hr><br><br>
 
+	<p>background color change</p>
+	<input type="text" name="" id="bg1"> <br>
+	<input type="submit" name="" onclick="bgFunction()"> <br>
+	<textarea cols="30" rows="10" id="bg2" > 
+		
+	</textarea><br>
+
+	<script type="text/javascript">
+		
+		function bgFunction()
+		{
+			var bgi = document.querySelector("#bg1");
+			var bgo = document.querySelector('#bg2');
+
+			bgi = bgi.value;
+			// document.write(bgi);
+			bgo.style.background = bgi;
+		}
+	</script>
+	<br><br><hr><hr><br><br>
+
+	<p>SUm of two number:</p>
+
+	<input type="number" name="" id="num1"><br>
+	<input type="number" name="" id="num2"><br>
+	<input type="submit" name="" onclick="sumFunction()"> <br>
+	<input type="text" name="" id="sum">
+	</textarea><br>
+
+	<script type="text/javascript">
+	
+	function sumFunction()
+	{
+
+		var num1 = document.querySelector('#num1').value;
+		var num2 = document.querySelector('#num2').value;
+
+		num1 = Number(num1);
+		num2 = Number(num2);
+
+		var sumNum = Number(num1+num2);
+		// document.write(sumNum);
+
+		document.querySelector('#sum').value = sumNum;
+	}
+
+	</script>
 
 
 </body>
