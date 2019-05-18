@@ -33,6 +33,9 @@ header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
 	<meta http-equiv="Expires" content="-1">
 	<meta http-equiv="Cache-Control" content="no-cache">
 	<link rel="stylesheet" href="css/admin.css">
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/main.js"></script>
 </head>
 <body>
 <div class="phpcoding">
@@ -42,6 +45,7 @@ header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
 		<ul>
 			<li><a href="index.php">Home</a></li>
 			<li><a href="users.php">Manage user</a></li>
+			<li><a href="theme.php">Theme</a></li>
 			<li><a href="quesadd.php">Add Ques</a></li>
 			<li><a href="queslist.php">Ques List</a></li>
 			<li><a href="?action=logout">Logout</a></li>

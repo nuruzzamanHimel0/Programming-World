@@ -34,13 +34,18 @@ header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
 <!doctype html>
 <html>
 <head>
-	<title>Online Exam System</title>
+	<!-- //Blog With PHP OOP (Dynamically Displaying Page, Post Title in header.php) : Part-30 -->
+	<?php include_once('script/title.php'); ?>
+
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="Pragma" content="no-cache">
 	<meta http-equiv="no-cache">
 	<meta http-equiv="Expires" content="-1">
 	<meta http-equiv="Cache-Control" content="no-cache">
-	<link rel="stylesheet" href="css/main.css">
+	
+	<?php include_once("script/css.php"); ?>
+
+
 	<script src="js/jquery.js"></script>
 	<script src="js/main.js"></script>
 </head>
@@ -61,19 +66,23 @@ header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
 		<div class="menu">
 		<ul>
 		<?php 
+			$path = $_SERVER['SCRIPT_FILENAME'];
+			$title = basename($path,'.php');
+		?>	
+		<?php 
 			$login = Session::get('userLogin');
 			if($login == 'TURE')
 			{
 		?>
-			<li><a href="profile.php">Profile</a></li>
-			<li><a href="exam.php">Exam</a></li>
+			<li><a <?php if($title == 'profile'){echo "id ='active'";} ?> href="profile.php">Profile</a></li>
+			<li><a href="exam.php" <?php if($title == 'exam'){echo "id ='active'";} ?>>Exam</a></li>
 			<li><a href="?action=userLogout">Logout</a></li>
 		<?php		
 			}else{
 		?>
 
-			<li><a href="index.php">Login</a></li>
-			<li><a href="register.php">Register</a></li>
+			<li><a href="index.php" <?php if($title == 'index'){echo "id ='active'";} ?> >Login</a></li>
+			<li><a href="register.php" <?php if($title == 'register'){echo "id ='active'";} ?> >Register</a></li>
 		<?php } ?>
 			
 		</ul>
