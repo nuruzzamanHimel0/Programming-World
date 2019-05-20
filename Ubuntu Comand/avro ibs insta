@@ -1,0 +1,14 @@
+1)cd Desktop
+2) wget "https://github.com/ugcoder/avro/releases/download/v2.0/avro_2.0-1_all.deb"
+3) sudo dpkg -i avro_2.0-1_all.deb
+then get password
+4) sudo apt-get install -fy
+
+check ibus set or not so go setting>language support>keybord input method system: ibus
+
+5)ibus restart
+
+then go again settig>keybord>text entry>add(+) avro
+
+
+Youtube Link:https://www.youtube.com/watch?v=3pIaFK2oAYs
