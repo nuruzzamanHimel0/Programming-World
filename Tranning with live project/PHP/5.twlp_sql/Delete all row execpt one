@@ -1,0 +1,1 @@
+$query = "DELETE FROM table_name WHERE id NOT IN (1)"
