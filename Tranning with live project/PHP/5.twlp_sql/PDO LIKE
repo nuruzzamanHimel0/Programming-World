@@ -1,0 +1,5 @@
+$campaign_id = '1';  
+$search_name = 'aaaaaefdfdfdf'
+$query = "SELECT * FROM sms_keywords WHERE campaign_id LIKE ? AND key_keyword LIKE ?";
+                $keyword_stmt = $dbh->prepare($query);
+                $keyword_stmt->execute(array("%$campaign_id%", "%$search_name%"));
