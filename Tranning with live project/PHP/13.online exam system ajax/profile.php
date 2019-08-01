@@ -42,6 +42,7 @@ include_once($filepath."/inc/header.php");
 			 
 			   <td><input id="udtuserId" type="hidden" value="<?php echo $value['userId']; ?>"></td>
 			 </tr>  
+
 			 <tr>
 			   <td>Name</td>
 			   <td><input id="udtname" type="text" value="<?php echo $value['name']; ?>"></td>
@@ -55,7 +56,7 @@ include_once($filepath."/inc/header.php");
 			   <td>Email</td>
 			   <td><input id="udtemail" type="text" value="<?php echo $value['email']; ?>"></td>
 			 </tr>
-			 
+			
 			  <tr>
 			  <td></td>
 			   <td><input type="submit" id="profileUdt" value="Profile Update">
@@ -65,8 +66,6 @@ include_once($filepath."/inc/header.php");
 	   </form>
 	  
 	</div>
-
-
 	
 </div>
 <?php include 'inc/footer.php'; ?>
