@@ -1,0 +1,29 @@
+step: 
+1) Installl lampp from url: https://www.apachefriends.org/index.html
+
+2) Move to the Downloads folder by using the following command:
+
+->$ cd /home/[username]/Downloads
+
+The installation package you downloaded needs to be made executable before it can be used further. Run the following command for this purpose:
+
+->$ chmod 755 [package name]
+Example:
+
+$ chmod 755 xampp-linux-x64-7.2.10-0-installer.run
+
+3)Step 3: Confirm execute permission
+It is important to verify if the package can be executed by the current user. The execute permission can be checked through the following command:
+
+$ ls -l [package name]
+Example:
+
+$ ls -l xampp-linux-x64-7.2.10-0-installer.run
+
+4)Step 4: Launch the Setup Wizard
+As a privileged root user, run the following command in order to launch the graphical setup wizard.
+
+$ sudo ./[package name]
+Example:
+
+sudo ./xampp-linux-7.2.10-0-installer.run
