@@ -1,0 +1,18 @@
+RewriteEngine On
+
+RewriteBase /2.2.htacces_add_multiple_query_string_in_menually/
+
+# ture and false file(!-f) and directory(!-d) (^-carat)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+
+RewriteRule ^user/([A_Za-z0-9-]+)$ user.php?id=$1&cloud=cloudOne&name=Himel [NC,L]
+
+#Only Germany re-write rule
+#RewriteRule ^user/garmany/([A_Za-z0-9-]+)/([A_Za-z0-9-]+)$ user.php?id=$1&county=$2&cloud=GOOGLE [NC,L]
+
+#Germany or USA combine rewrite rule
+
+RewriteRule ^user/(garmany|USA)/([A_Za-z0-9-]+)/([A_Za-z0-9-]+)$ user.php?id=$1&county=$2&cloud=GOOGLE [NC,L]

@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteBase /htaccess_rewrite_url/
+RewriteBase /1.htaccess_rewrite_url/
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
