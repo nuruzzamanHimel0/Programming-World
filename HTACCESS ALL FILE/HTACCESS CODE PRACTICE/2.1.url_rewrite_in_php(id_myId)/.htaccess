@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteBase /url_rewrite_in_php/
+RewriteBase /2.url_rewrite_in_php(id_myId)/
 
 #SAME RULE.........
 #RewriteRule ^(user)$ user.php

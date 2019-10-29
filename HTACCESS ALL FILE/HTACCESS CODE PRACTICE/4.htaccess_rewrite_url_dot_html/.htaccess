@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteBase /4.htaccess_rewrite_url_dot_html/
+
+# ture and false file(!-f) and directory(!-d) (^-carat)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+
+RewriteRule ^user/([A_Za-z0-9-]+)\.php$ user.php?id=$1 [NC,L]

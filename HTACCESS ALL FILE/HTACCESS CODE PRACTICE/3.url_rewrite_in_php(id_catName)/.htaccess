@@ -1,0 +1,11 @@
+RewriteEngine On
+
+RewriteBase /3.url_rewrite_in_php(id_catName)/
+
+# ture and false file(!-f) and directory(!-d) (^-carat)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+
+
+RewriteRule ^user/([A_Za-z0-9-]+)/([A_Za-z0-9-]+)$ user.php?id=$1&cat_name=$2 [NC,L]
