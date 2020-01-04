@@ -1,13 +1,15 @@
 RewriteEngine On
-RewriteBase /url_rewrite_in_php/
+RewriteBase /2.1.url_rewrite_in_php(id_myId)/
 
 #SAME RULE.........
 #RewriteRule ^(user)$ user.php
-RewriteRule ^user?$ user.php
+#RewriteRule ^user?$ user.php
 #RewriteRule ^user$ user.php
 #SAME RULE.........
 
 #RewriteRule ^(.*)$ text.php [QSA,L]
 
-RewriteRule ^user/([0-9]+)$ user.php?id=$1 [NC,L]
+#two different conditon but both are right
+
+#RewriteRule ^user/([0-9]+)$ user.php?id=$1 [NC,L]
 RewriteRule ^user/(\w+)/(\w+)$ user.php?id=$1&my_id=$2 [NC,L]

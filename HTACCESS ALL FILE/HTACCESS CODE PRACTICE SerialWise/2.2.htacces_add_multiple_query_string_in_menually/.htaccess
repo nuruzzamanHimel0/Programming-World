@@ -10,9 +10,17 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 RewriteRule ^user/([A_Za-z0-9-]+)$ user.php?id=$1&cloud=cloudOne&name=Himel [NC,L]
 
+#..........................................................
+
 #Only Germany re-write rule
 #RewriteRule ^user/garmany/([A_Za-z0-9-]+)/([A_Za-z0-9-]+)$ user.php?id=$1&county=$2&cloud=GOOGLE [NC,L]
+
+#here, germany not use as a query string value bez there havenot any brecker beside the garmany like this (germany)
+
+#.................................................
 
 #Germany or USA combine rewrite rule
 
 RewriteRule ^user/(garmany|USA)/([A_Za-z0-9-]+)/([A_Za-z0-9-]+)$ user.php?id=$1&county=$2&cloud=GOOGLE [NC,L]
+
+# here, (garmany|USA) use as a value of query stirng ex: id=germany or usa,country=1 OR 2

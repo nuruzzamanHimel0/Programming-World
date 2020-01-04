@@ -8,4 +8,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 
 
-RewriteRule ^user/([A_Za-z0-9-]+)$ user.php?id=$1 [NC,L]
+RewriteRule ^user/([A_Za-z0-9-]+)$ user.php?id=$1&name=user [NC,L]

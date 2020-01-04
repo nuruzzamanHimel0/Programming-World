@@ -15,6 +15,7 @@
 			echo "<pre>";
 			print_r($_GET);
 			echo "User id=".$_GET['id']."<br>";
+			echo "User name=".$_GET['name']."<br>";
 			
 		}
 	?>
