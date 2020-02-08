@@ -1,0 +1,10 @@
+SELECT * FROM `tbl_samples_post`
+INNER JOIN tbl_twitter_user
+    ON tbl_twitter_user.user_id = tbl_samples_post.user_id
+       
+    LEFT JOIN tbl_follow
+    ON tbl_follow.sender_id = tbl_samples_post.user_id
+       
+        WHERE tbl_follow.receiver_id ='5' OR tbl_samples_post.user_id = '5'
+
+
