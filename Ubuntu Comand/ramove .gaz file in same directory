@@ -1,0 +1,1 @@
+find /root -maxdepth 1 -name "*.gz" -type f -delete
