@@ -9,3 +9,7 @@ RewriteCond %{REQUEST_FILENAME} !-d
 
 
 RewriteRule ^user/([A_Za-z0-9-]+)/([A_Za-z0-9-]+)$ user.php?id=$1&cat_name=$2 [NC,L]
+
+#for admin panel 
+
+RewriteRule ^admin/user/([A_Za-z0-9-]+)/([A_Za-z0-9-]+)$ admin/user.php?id=$1&cat_name=$2 [NC,L]
