@@ -1,0 +1,322 @@
+*{margin:0;padding:0;outline:0}
+body{font-family:verdana;font-size:12px;line-height:16px;}
+a{color:#000;font-weight:bold;text-decoration:none;}
+a:hover{text-decoration:underline;}
+h1, h2, h3, h4, h5, h6{font-weight:normal}
+
+/*...................... headersection ..................*/
+
+#headersection{}
+
+#headersection .row {
+    background: #EAF2F4;
+    /* height: 60px; */
+    border-top: 5px solid #4D4E49;
+    border-bottom: 1px solid #ADBCBF;
+}
+#headersection .headertoleft{}
+#headersection .headertoleft p {
+    font-family: Georgia;
+    font-size: 16px;
+    padding-left: 12px;
+    margin-top: 5px;
+}
+#headersection .headertoleft h2 {
+    font-family: Georgia;
+    font-size: 36px;
+    border-right: 1px solid #4D4E49;
+    color: #4D4E49;
+    padding-right: 50px;
+}
+#headersection .headertoright {
+    margin-top: 9px;
+}
+
+#headersection .headertoright input[type="search"] {
+    width: 254px;
+    padding: 11px;
+    margin: 0;
+    background: #D5E5E8;
+    border: 1px solid #D5E5E8;
+}
+#headersection .headertoright input[type="submit"] {
+    background: #D5E5E8;
+    border: 1px solid #D5E5E8;
+    padding: 7px;
+}
+
+/*....................  nav-section .....................*/
+
+#nav-section{}
+#nav-section .menuright{}
+#nav-section .menuright p {
+    margin: 0;
+    color: #5D655A;
+    font-size: 12px;
+}
+#nav-section .navbar{}
+#nav-section .row {
+    background: #EAF2F4;
+}
+#nav-section ul{}
+#nav-section ul li {
+    padding: 4px 8px;
+    border-right: 1px solid #b6c6c9;
+    font-size: 14px;
+}
+#nav-section ul li a{  color: #666666;}
+#nav-section ul li:last-child{border-right: 0px solid #b6c6c9;}
+
+/*....................... bannersection......................*/
+
+#bannersection{}
+#bannersection .row {
+    background: #049BAC;
+ /*   height: 341px;*/
+    border-top: 2px solid #116FA6;
+    border-bottom: 2px solid #116FA6;
+}
+#bannersection .row .bannerleft {
+    margin-bottom: 40px;
+}
+#bannersection .row .bannerleft h1 {
+    margin-top: 50px;
+    color: #fff;
+    font-family: Georgia;
+    font-size: 36px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 23px;
+}
+#bannersection .row .bannerleft p {
+    color: #fff;
+    font-family: Verdana;
+    font-size: 12px;
+    line-height: 21px;
+    text-align: justify;
+}
+#bannersection .row a {
+    background: #DEDEDE;
+    padding: 9px 28px;
+    font-family: Georgia;
+    font-size: 18px;
+}
+
+#bannersection .row .bannerright {
+    text-align: center;
+}
+#bannersection .row .bannerright img {
+    margin-top: 44px;
+   
+ 
+    border: 5px solid #fff;
+}
+
+/*..................... servicesection........................*/
+
+#servicesection{}
+#servicesection .row {
+    padding: 44px 27px;
+    background: #EAF2F4;
+    border-bottom: 1px solid #fff;
+}
+
+#servicesection .card {}
+#servicesection .card .card-header{}
+#servicesection .card .card-header h1 {
+    color: #049bac;
+    font-size: 22px;
+    font-family: georgia;
+    background: #f1f7f7;
+    margin: 0;
+    text-align: center;
+    padding: 4px;
+    text-transform: uppercase;
+}
+#servicesection .card .card-body {
+    background: #EAF2F4;
+}
+#servicesection .card .card-body h5 {
+    color: #666666;
+    border-bottom: 1px solid #666666;
+    padding-bottom: 5px;
+    font-family: georgia;
+    font-size: 22px;
+}
+#servicesection .card .card-body p{
+    font-family: Verdana;
+      color: #666666;
+}
+#servicesection .card .card-body a{float: right;}
+
+/*......................... contentsection ..................*/
+
+#contentsection{}
+#contentsection .row {
+    background: #EAF2F4;
+    padding: 21px 0;
+}
+#contentsection .contentleft{}
+#contentsection .contentleft h2 {
+    font-family: Georgia;
+    font-size: 22px;
+    border-bottom: 2px solid #CDD8D8;
+    padding-bottom: 7px;
+}
+#contentsection .contentleft .media {
+    margin-top: 25px;
+    border-bottom: 2px solid #CDD8D8;
+    padding-bottom: 12px;
+}
+#contentsection .contentleft .media:last-child{
+    border-bottom: 0px;
+}
+#contentsection .contentleft .media img {
+    width: 90px;
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #444;
+}
+#contentsection .contentleft .media .media-body{}
+#contentsection .contentleft .media .media-body h5 {
+    font-family: Verdana;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #666666;
+}
+#contentsection .contentleft .media .media-body p {
+    font-size: 12px;
+    font-family: Verdana;
+    line-height: 18px;
+    margin-bottom: -11px;
+    color: #666666;
+}
+#contentsection .contentleft .media .media-body a {
+    float: right;
+}
+
+#contentsection .contentright{}
+#contentsection .contentright h2 {
+    font-family: Georgia;
+    font-size: 22px;
+    border-bottom: 2px solid #CDD8D8;
+    padding-bottom: 7px;
+    margin-bottom: 21px;
+}
+#contentsection .contentright .contentrightimg {
+    float: left;
+    margin-right: 20px;
+}
+#contentsection .contentright .contentrightimg img {
+    background: #fff;
+    padding: 5px;
+    border: 1px solid #444;
+}
+#contentsection .contentright .contentrighttext{}
+#contentsection .contentright .contentrighttext h4{
+        font-family: Verdana;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #666666;
+}
+#contentsection .contentright .contentrighttext p {
+    font-size: 12px;
+    font-family: Verdana;
+    line-height: 18px;
+    margin-bottom: 2px;
+    color: #666666;
+}
+
+/*...................... footertopsection .....................*/
+#footertopsection{}
+#footertopsection .row {
+    background: #2C2C2D;
+    padding: 13px 0px;
+}
+#footertopsection .row .samefooter{}
+#footertopsection .row .samefooter h2 {
+    color: #98989A;
+    font-family: Georgia;
+    font-size: 22px;
+    border-bottom: 1px solid #98989A;
+    padding-bottom: 9px;
+    margin-bottom: 19px;
+}
+#footertopsection .row .samefooter p {
+    font-family: Verdana;
+    font-size: 12px;
+    color: #98989A;
+}
+#footertopsection .row .samefooter a{
+    font-family: Verdana;
+    font-size: 12px;
+    color: #98989A;
+}
+#footertopsection .row .samefooter input[type="search"] {
+    width: 245px;
+    padding: 5px;
+}
+#footertopsection .row .samefooter button {
+    padding: 5px;
+}
+
+#footertopsection .row .samefooter ul{}
+#footertopsection .row .samefooter ul li {
+    padding-bottom: 11px;
+}
+#footertopsection .row .samefooter ul li a {
+    color: #049BAC;
+    padding-bottom: 7px;
+}
+
+
+/*......................... footerbottomsection ...............*/
+
+#footerbottomsection{}
+#footerbottomsection .row {
+    background: #252526;
+    color: #fff;
+    padding: 13px 0;
+
+}
+#footerbottomsection .row .footerbottomleft{}
+#footerbottomsection .row .footerbottomleft p {
+    font-family: Verdana;
+    font-size: 13px;
+    /*margin-bottom: 22px;*/
+}
+#footerbottomsection .row .footerbottomright {}
+#footerbottomsection .row .footerbottomleft p {
+      font-family: Verdana;
+    font-size: 13px;
+    /*margin-bottom: 22px;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*....................... Media Query Start .......................*/
+
+/*// Large devices (desktops, less than 1200px)*/
+@media (max-width: 1200px) {  }
+/*// Medium devices (tablets, less than 992px)*/
+@media (max-width:992px) { 
+    #headersection .headertoright input[type="search"] {
+    width: 209px;
+      }
+ }
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 768px) {  }
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 576px) {  }

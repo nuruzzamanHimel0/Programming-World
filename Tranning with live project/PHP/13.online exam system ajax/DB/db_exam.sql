@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 5.0.2
+-- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 18, 2019 at 06:36 AM
--- Server version: 10.1.19-MariaDB
--- PHP Version: 5.6.28
+-- Generation Time: Jul 24, 2020 at 04:56 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.2.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -37,7 +38,7 @@ CREATE TABLE `tbl_admin` (
 --
 
 INSERT INTO `tbl_admin` (`adminId`, `adminUser`, `adminPass`) VALUES
-(1, 'admin', '1a1dc91c907325c69271ddf0c944bc72');
+(1, 'admin', 'e6053eb8d35e02ae40beeeacef203c1a');
 
 -- --------------------------------------------------------
 
@@ -48,7 +49,7 @@ INSERT INTO `tbl_admin` (`adminId`, `adminUser`, `adminPass`) VALUES
 CREATE TABLE `tbl_ans` (
   `id` int(11) NOT NULL,
   `qustNo` int(11) NOT NULL,
-  `rightAns` int(11) NOT NULL DEFAULT '0',
+  `rightAns` int(11) NOT NULL DEFAULT 0,
   `ans` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -104,6 +105,24 @@ INSERT INTO `tbl_qus` (`id`, `qustNo`, `qust`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbl_theme`
+--
+
+CREATE TABLE `tbl_theme` (
+  `id` int(11) NOT NULL,
+  `theme_name` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tbl_theme`
+--
+
+INSERT INTO `tbl_theme` (`id`, `theme_name`) VALUES
+(1, 'defalt.css');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `tbl_user`
 --
 
@@ -113,7 +132,7 @@ CREATE TABLE `tbl_user` (
   `username` varchar(100) NOT NULL,
   `password` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
-  `status` int(11) NOT NULL DEFAULT '0'
+  `status` int(11) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -151,6 +170,12 @@ ALTER TABLE `tbl_qus`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `tbl_theme`
+--
+ALTER TABLE `tbl_theme`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
@@ -165,21 +190,26 @@ ALTER TABLE `tbl_user`
 --
 ALTER TABLE `tbl_admin`
   MODIFY `adminId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
 --
 -- AUTO_INCREMENT for table `tbl_ans`
 --
 ALTER TABLE `tbl_ans`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+
 --
 -- AUTO_INCREMENT for table `tbl_qus`
 --
 ALTER TABLE `tbl_qus`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+
 --
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
   MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
