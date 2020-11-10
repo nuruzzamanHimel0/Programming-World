@@ -1,0 +1,3 @@
+$sub_query = "UPDATE tbl_twitter_user 
+			SET follower_number = follower_number + 1 
+			WHERE user_id = :user_id ";

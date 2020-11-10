@@ -1,0 +1,24 @@
+How to fetch only one row from a mysql query
+In addition to the correct answers, there are multiple ways to handle this:
+If you add LIMIT 1, the result set will only contain one row and the while loop will terminate after one iteration:
+$query  = "select whatIwant FROM table where id = 'myId' LIMIT 1";
+$result = mysql_query($query);
+while($row = mysql_fetch_array($result)) {
+   $value = $row ['whatIwant'];
+}
+echo $value;
+If you call mysql_fetch_array without a loop, you will get the first row of the result set:
+$query  = "select whatIwant FROM table where id = 'myId'";
+$result = mysql_query($query);
+$row    = mysql_fetch_array($result);
+$value  = $row['whatIwant'];
+echo $value;
+If you add break to the loop body, the loop will terminate after one iteration.
+$query  = "select whatIwant FROM table where id = 'myId'";
+$result = mysql_query($query);
+while($row = mysql_fetch_array($result)) {
+   $value = $row['whatIwant'];
+   break;
+}
+echo $value;
+You can also combine these approaches (although using break is not really elegant in this case). The best approach is using LIMIT and omitting the while loop. This makes the code clearer and avoids unnecessary operations in the database.
